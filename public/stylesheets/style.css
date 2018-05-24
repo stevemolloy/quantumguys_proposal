@@ -1,30 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #container {
   display: grid;
   width: 100%;
-  height: 700px;
-  grid-template-areas: "head head"
-                       "nav  main"
-                       "nav  foot";
-  grid-template-rows: 50px 1fr 30px;
-  grid-template-columns: 150px 1fr;
+  grid-template-areas: "head" "main" "foot";
+  grid-template-rows: 100px 1fr 60px;
+  height: 100vh;
 }
 
-#container > header {
+#container>header {
   grid-area: head;
-  background-color: #8ca0ff;
+  background-color: #28262c;
+  padding: 10px 10%;
+  font-family: 'Raleway', sans-serif;
+  color: #bcf4f5;
 }
 
-#container > nav {
-  grid-area: nav;
-  background-color: #ffa08c;
-}
-
-#container > main {
+#container>main {
   grid-area: main;
-  background-color: #ffff64;
+  background-color: rgb(43, 202, 199, 0.2);
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  font-family: 'Merriweather', serif;
+  color: #28262c;
 }
 
-#container > footer {
+#container>footer {
   grid-area: foot;
-  background-color: #8cffa0;
+  background-color: #28262c;
+  font-family: 'Raleway', sans-serif;
+  color: #bcf4f5;
 }
