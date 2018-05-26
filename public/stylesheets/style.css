@@ -8,9 +8,25 @@
   width: 100%;
   grid-template-areas: "head head head" "blank main link1" "blank main link2";
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 60px 1fr 1fr;
   height: 100vh;
   background-color: #555;
+}
+
+#container>meettheteam {
+  grid-area: link1;
+  height: 40vh;
+  margin: auto 0;
+  border-radius: 20px;
+  background-color: yellow;
+}
+
+#container>qoonet {
+  grid-area: link2;
+  height: 40vh;
+  margin: auto 0;
+  border-radius: 20px;
+  background-color: green;
 }
 
 #container>header {
