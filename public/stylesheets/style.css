@@ -7,7 +7,7 @@
   display: grid;
   width: 100%;
   grid-template-areas: "head head head" "blank main link1" "blank main link2";
-  grid-template-columns: 1fr 7fr 2fr;
+  grid-template-columns: 1fr 7fr minmax(200px, 2fr);
   grid-template-rows: 60px 1fr 1fr;
   height: 100vh;
   background-color: #555;
@@ -25,7 +25,6 @@
 }
 
 #container>meettheteam .meettheteamtext {
-  padding: 10px;
   font-size: 36px;
   text-align: center;
   color: #555;
@@ -47,7 +46,6 @@
 }
 
 #container>qoonet .qoonettext {
-  padding: 10px;
   font-size: 36px;
   text-align: center;
   color: #555;
