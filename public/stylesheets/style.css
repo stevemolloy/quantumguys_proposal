@@ -25,6 +25,7 @@
 }
 
 #container>meettheteam .meettheteamtext {
+  padding: 10px;
   font-size: 36px;
   text-align: center;
   color: #555;
@@ -46,6 +47,7 @@
 }
 
 #container>qoonet .qoonettext {
+  padding: 10px;
   font-size: 36px;
   text-align: center;
   color: #555;
