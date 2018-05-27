@@ -13,6 +13,18 @@
   background-color: #555;
 }
 
+@media only screen and (max-width: 1300px) {
+  #container {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "head" "main" "link1" "link2";
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 80vh 1fr 1fr;
+    height: 100vh;
+    background-color: #555;
+  }
+}
+
 #container>meettheteam {
   grid-area: link1;
   height: 40vh;
@@ -22,6 +34,13 @@
   border-bottom-left-radius: 20px;
   background-color: #ffd9b2;
   font-family: 'Raleway', sans-serif;
+}
+
+@media only screen and (max-width: 1300px) {
+  #container>meettheteam {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
 
 #container>meettheteam .meettheteamtext {
@@ -45,6 +64,13 @@
   font-family: 'Raleway', sans-serif;
 }
 
+@media only screen and (max-width: 1300px) {
+  #container>qoonet {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
 #container>qoonet .qoonettext {
   font-size: 36px;
   text-align: center;
@@ -52,6 +78,7 @@
   line-height: 1.5;
   display: inline-block;
   vertical-align: middle;
+  width: 100%;
 }
 
 #container>header {
@@ -100,6 +127,16 @@
   grid-column: 1 / 10;
   text-align: left;
   font-family: 'Merriweather', serif;
+}
+
+@media only screen and (max-width: 1300px) {
+  .cover {
+    margin: 0;
+    grid-row: 2 / 3;
+    grid-column: 2 / 12;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+  }
 }
 
 .cover h1 {
