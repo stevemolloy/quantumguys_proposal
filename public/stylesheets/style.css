@@ -15,12 +15,8 @@
 
 @media only screen and (max-width: 1300px) {
   #container {
-    display: grid;
-    width: 100%;
     grid-template-areas: "head head" "main main" "link1 link2";
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
-    background-color: #555;
   }
 }
 
@@ -39,6 +35,7 @@
   #container>meettheteam {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    margin: 0;
   }
 }
 
@@ -67,6 +64,7 @@
   #container>qoonet {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    margin: 0;
   }
 }
 
@@ -130,11 +128,7 @@
 
 @media only screen and (max-width: 1300px) {
   .cover {
-    margin: 0;
-    grid-row: 2 / 3;
     grid-column: 2 / 12;
-    text-align: left;
-    font-family: 'Merriweather', serif;
   }
 }
 
