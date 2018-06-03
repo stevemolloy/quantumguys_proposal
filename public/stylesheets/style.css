@@ -8,7 +8,9 @@
   width: 100%;
   grid-template-areas: "head head head" "blank main link1" "blank main link2";
   grid-template-columns: 1fr 7fr minmax(200px, 2fr);
+  -ms-grid-columns: 1fr 7fr minmax(200px, 2fr);
   grid-template-rows: 60px 1fr 1fr;
+  -ms-grid-rows: 60px 1fr 1fr;
   height: 100vh;
   background-color: #555;
 }
@@ -17,6 +19,7 @@
   #container {
     grid-template-areas: "head head" "main main" "link1 link2";
     grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
   }
 }
 
